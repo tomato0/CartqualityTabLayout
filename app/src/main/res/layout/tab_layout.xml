@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/btn_tab_dec"
+        android:text="—"
+        android:textSize="20sp"
+        android:layout_gravity="center_vertical"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_dec_drawable"
+        />
+    <TextView
+        android:id="@+id/txt_tab_count"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="16sp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_width="80dp"
+        android:background="@drawable/txt_total_drawable"
+        android:layout_height="match_parent" />
+    <Button
+        android:id="@+id/btn_tab_inc"
+        android:text="+"
+        android:textSize="20sp"
+        android:layout_gravity="center_vertical"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_dec_drawable"
+        />
+
+</LinearLayout>
