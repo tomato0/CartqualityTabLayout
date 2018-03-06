@@ -4,8 +4,8 @@ this is a layout for cart to add and dec shop
 在制作购物车的时候需要在ListView中添加加减和统计商品的一个小模块，
 为了在以后方便使用，自定义了一个小模版
 
-##使用方式
-###在布局文件下添加如下代码
+## 使用方式
+### 在布局文件下添加如下代码
     <com.example.carttab.CartTabLayout
         android:id="@+id/value_btn_layout"
         android:layout_centerInParent="true"
@@ -15,7 +15,7 @@ this is a layout for cart to add and dec shop
         
   此处后面会更进一些属性设置      
         
-##在Activity中
+## 在Activity中
 通过findViewById找到控件后
 CartTabLayout layout = (CartTabLayout) findViewById(R.id.value_btn_layout);
         
@@ -24,11 +24,11 @@ CartTabLayout layout = (CartTabLayout) findViewById(R.id.value_btn_layout);
         maxValue最大值不应该超过库存
         
         
-##返回数值的接口口回调
+## 返回数值的接口口回调
 
 layout.setValueClickListener(this);
 
-
+``` java
 @Override
     public void onClickDec(View view, int value) {
     //减少按钮回调监听
@@ -42,3 +42,4 @@ layout.setValueClickListener(this);
     
         Toast.makeText(MainActivity.this, "加了"+String.valueOf(value), Toast.LENGTH_SHORT).show();
     }
+```
